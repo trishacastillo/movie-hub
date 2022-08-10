@@ -5,6 +5,7 @@ import NotFound from './NotFound';
 import MovieDetails from './MovieDetails';
 import Categories from './components/Categories';
 import About from './components/About';
+import TvShows from './TvShows';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
             </Route>
             <Route path="/genres">
               <Categories/>
+            </Route>
+            <Route path="/tvshows">
+              <TvShows/>
             </Route>
             <Route path="/about">
               <About/>
