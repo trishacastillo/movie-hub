@@ -10,7 +10,6 @@ const MovieList = ({ movies }) => {
             <p><img src={ cover_path+movie.poster_path } alt="" /></p>
             <Link to={`/movies/${movie.id}`}>
             <h2>{ movie.title }</h2>
-            <p>Written by { movie.released_date }</p>
             </Link>
         </div>
       ))}

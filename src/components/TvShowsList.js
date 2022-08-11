@@ -10,7 +10,6 @@ const TvShowsList = ({ tvshow }) => {
             <p><img src={ cover_path+tv.poster_path } alt="" /></p>
             <Link to={`/tvshow/${tv.id}`}>
             <h2>{ tv.name }</h2>
-            <p>Written by { tv.released_date }</p>
             </Link>
         </div>
       ))}
