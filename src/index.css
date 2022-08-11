@@ -114,15 +114,15 @@
 }
 /*FEATURED*/
 .category-container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(auto-fill,minmax(10em,1fr));
 }
-.movie-preview{
+.movie-preview, .tv-preview{
   max-width: 15%;
   margin: 1em;
 }
-.movie-preview img{
+.movie-preview img, .tv-preview img{
   height: 270px;
   width: 180px;
 }
@@ -140,10 +140,18 @@
 }
 
 /**/
-.genre-preview{
-  width: 50%;
-}
+
 .genre-container{
   display: flex;
   flex-wrap: wrap;
+}
+.genre-preview{
+  width: 20%;
+  margin: 1em;
+}
+
+.about{
+  width: 75%;
+  font-size: 1.5em;
+  margin: auto;
 }

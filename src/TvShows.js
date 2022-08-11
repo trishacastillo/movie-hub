@@ -1,4 +1,3 @@
-import MovieList from "./components/MovieList";
 import TvShowsList from "./components/TvShowsList";
 import useFetch from "./useFetch";
 

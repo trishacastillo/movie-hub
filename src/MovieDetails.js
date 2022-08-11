@@ -20,16 +20,16 @@ const MovieDetails = () => {
             <img src={ cover_path+movie_data.poster_path } alt="" />
           </div>
           <div className="movie-card">
+            
+            <h2>{ movie_data.title }</h2>
+            <p>Overview { movie_data.overview }</p>
+            <p>Released Date { movie_data.release_date }</p>
+            <p>Status { movie_data.status }</p>
+            <p>Production Company { movie_data.production_companies[0].name }</p>
+            <p>Production Country { movie_data.production_countries[0].name }</p>
             <div className="rating">
               { movie_data.vote_average.toFixed(1) }
             </div>
-            <h2>{ movie_data.title }</h2>
-            <p>Overview { movie_data.overview }</p>
-            <p>Overview { movie_data.release_date }</p>
-            <p>St { movie_data.status }</p>
-            <p>Prod { movie_data.production_companies[0].name }</p>
-            <p>Prod { movie_data.production_countries[0].name }</p>
-            
           </div>
           
           

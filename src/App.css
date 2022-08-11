@@ -10,6 +10,11 @@ article{
 }
 .movie-card{
   font-size: 1.5em;
+  align-items: center;
+  align-self: center;
+}
+.movie-card h2{
+  margin-bottom: 1em;
 }
 .rating {
   float: right;

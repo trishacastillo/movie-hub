@@ -9,11 +9,6 @@ const Navbar = () => {
         <Link to="/genres">Movies</Link>
         <Link to="/tvshows">TV Shows</Link>
         <Link to="/about">About</Link>
-        <Link to="/create" style={{ 
-          color: 'white', 
-          backgroundColor: '#ff0042',
-          borderRadius: '8px' 
-        }}>New Blog</Link>
       </div>
     </nav>
   ); 

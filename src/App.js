@@ -6,6 +6,7 @@ import MovieDetails from './MovieDetails';
 import Categories from './components/Categories';
 import About from './components/About';
 import TvShows from './TvShows';
+import MovieListGenre from './components/MovieListGenre';
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
             </Route>
             <Route path="/movies/:id">
               <MovieDetails/>
+            </Route>
+            <Route path="/movie/genre/:id">
+              <MovieListGenre/>
             </Route>
             <Route path="/genres">
               <Categories/>
