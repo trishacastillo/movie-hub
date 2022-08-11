@@ -9,6 +9,7 @@ const Navbar = () => {
         <Link to="/genres">Movies</Link>
         <Link to="/tvshows">TV Shows</Link>
         <Link to="/about">About</Link>
+
       </div>
     </nav>
   ); 

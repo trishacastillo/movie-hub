@@ -155,3 +155,14 @@
   font-size: 1.5em;
   margin: auto;
 }
+
+@media screen and (max-width: 480px) {
+  .search-box{
+    display: contents;
+  }
+  .genre-container{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill,minmax(10em,1fr));
+  }
+}
