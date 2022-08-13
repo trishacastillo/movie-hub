@@ -7,9 +7,10 @@ const MovieList = ({ movies }) => {
     <div className="category-container">
       {movies.results.map(movie => (
         <div className="movie-preview" key={movie.id}>
-            <p><img src={ cover_path+movie.poster_path } alt="" /></p>
+            <img src={ cover_path+movie.poster_path } alt="" />
             <Link to={`/movies/${movie.id}`}>
-            <h2>{ movie.title }</h2>
+            <p>{ movie.title }</p>
+            <p>{ new Date(movie.release_date).getFullYear() }</p>
             </Link>
         </div>
       ))}

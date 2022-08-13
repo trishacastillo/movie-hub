@@ -32,3 +32,8 @@ article{
 .about img{
   width: 100px;
 }
+@media screen and (max-width: 600px) {
+  article{
+    flex-direction: column;
+  }
+}

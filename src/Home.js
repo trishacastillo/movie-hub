@@ -22,7 +22,7 @@ const Home = () => {
       { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
       { searchData && <div><h2>Search Movies</h2> <MovieList movies={searchData}/></div> }
-      {searchData ? (<div>ff</div>):(<div>{ movies && <div><h2>Trending Movies</h2> <MovieList movies={movies}/></div> }</div>) }
+      {searchData ? (<div></div>):(<div>{ movies && <div><h2>Trending Movies</h2> <MovieList movies={movies}/></div> }</div>) }
     </div>
     
   );
