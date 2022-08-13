@@ -7,7 +7,7 @@ const MovieDetails = () => {
 
   const { id } = useParams();
   const API_KEY='ae7f7ed289b6d77c7761b724b99082dc';
-  const movie_details=`http://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`;
+  const movie_details=`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`;
   const { error, isPending, data: movie_data } = useFetch(movie_details)
 
   return (
