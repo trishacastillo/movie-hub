@@ -7,8 +7,8 @@ const MovieDetails = () => {
 
   const { id } = useParams();
   const API_KEY='ae7f7ed289b6d77c7761b724b99082dc';
-  const popular=`http://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`;
-  const { error, isPending, data: movie_data } = useFetch(popular)
+  const movie_details=`http://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`;
+  const { error, isPending, data: movie_data } = useFetch(movie_details)
 
   return (
     <div className="movie_data-details">
@@ -19,7 +19,7 @@ const MovieDetails = () => {
           <div className="movie-poster">
             <img src={ cover_path+movie_data.poster_path } alt="" />
           </div>
-          <div className="movie-card">
+          <div className="movie-card" key={movie_data.id}>
             
             <h2>{ movie_data.title }</h2>
             <p>Overview { movie_data.overview }</p>
