@@ -250,3 +250,8 @@
 .home, .tv-shows, .about, .not-found{
   margin-top: 47px;
 }
+footer{
+  padding: 1em;
+  margin: auto;
+  text-align: center;
+}

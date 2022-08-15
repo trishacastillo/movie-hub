@@ -7,6 +7,7 @@ import Categories from './components/Categories';
 import About from './components/About';
 import TvShows from './TvShows';
 import MovieListGenre from './components/MovieListGenre';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <Footer/>
       </div>
     </Router>
   );
