@@ -104,8 +104,8 @@
   margin: 1em;
 }
 .movie-preview img, .tv-preview img{
-  height: 270px;
-  width: 180px;
+  height: 250px;
+  width: 170px;
 }
 .movie-preview a, .tv-preview a, .genre-preview a{
   text-decoration: none;
@@ -229,6 +229,7 @@
   }
 }
 @media screen and (max-width: 600px) {
+
   main{
     flex-direction: column-reverse;
   }
