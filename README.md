@@ -5,7 +5,7 @@
 Users can search movie information as well as look for category of their preference. The app can display list of movies based on the search result. View the released date, genre, IMDB rating, producer company, producer country, and short plot.</p>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-https://moviecyclopedia.herokuapp.com/
+
 
 ## Available Scripts
 
