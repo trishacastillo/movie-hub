@@ -256,3 +256,8 @@ footer{
   margin: auto;
   text-align: center;
 }
+.loaders{
+  height: 90vh;
+  width: 100%;
+  margin: auto;
+}

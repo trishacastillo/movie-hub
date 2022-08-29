@@ -3,6 +3,7 @@ import { useState } from "react";
 import MovieList from "./components/MovieList";
 import SearchBox from "./components/Searchbox";
 import useFetch from "./useFetch";
+import ReactLoading from "react-loading";
 
 const Home = () => {
   const [search, setSearch]=useState([]);
@@ -20,7 +21,11 @@ const Home = () => {
     <div className="home">
       <SearchBox search={search} setSearch={setSearch}/>
       { error && <div>{ error }</div> }
-      { isPending && <div>Loading...</div> }
+      { isPending && 
+        <div className="loaders">
+          <ReactLoading type="spin" color="#0000FF"
+          size={10} className="loaders"/>
+        </div> }
       { searchData && <div><h2>Search Movies</h2> <MovieList movies={searchData}/></div> }
       {searchData ? (<div></div>):(<div>{ movies && <div><h2>Trending Movies</h2> <MovieList movies={movies}/></div> }</div>) }
     </div>

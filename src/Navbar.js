@@ -18,11 +18,8 @@ const Navbar = () => {
       </div>
       
       <button className="icon" onClick={toggle}><i className='fa fa-bars'></i></button>
-   {/* <nav className="navbar">
-        
-      
-    </nav> */}
-</nav>
+   
+    </nav>
    
   ); 
 }
