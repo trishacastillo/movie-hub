@@ -6,6 +6,7 @@ Users can search movie information as well as look for category of their prefere
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Live Demo
 
 ## Available Scripts
 
