@@ -110,18 +110,25 @@
 .movie-preview a, .tv-preview a, .genre-preview a{
   text-decoration: none;
 }
-.movie-preview p{
+.movie-preview p, .tv-preview p{
   overflow-wrap: break-word;
   width: 180px;
 }
 
 .search-box{
-  float: right;
+  margin-left: auto;
   width: 30%;
 }
 .search-box input{
   padding: 5px;
   width: 100%;
+}
+.searchBox{
+  display: flex;
+}
+.searchBox button{
+  background: #003488;
+  color: white;
 }
 
 /**/
@@ -150,15 +157,23 @@
     grid-gap: 1em;
     grid-template-columns: repeat(auto-fill,minmax(10em,1fr));
   }
+  .category-container{
+    font-size: .5em;
+  }
+  .movie-preview img, .tv-preview img{
+    height: 140px;
+    width: 100px;
+  }
 }
 
 /*NAV*/
 
 .topnav {
+  margin: 0;
   position: absolute;
   z-index: 1;
   overflow: hidden;
-  background-color: #eee;
+  border-bottom: 1px solid #f3ebeb;
   width: 100%;
 
 }
@@ -172,7 +187,7 @@
   font-size: 17px;
 }
 .topnav a:hover {
-  background-color: #ddd;
+  border-bottom: 3px solid blue;
   color: black;
 }
 .topnav a.active {
@@ -208,12 +223,14 @@
 }
 
 @media screen and (max-width: 600px) {
+  .topnav{
+    background: aliceblue;
+  }
   .topnav a {
     display: none;
   }
 
   .topnav button.icon {
-    background: #d8d8d8;
     float: right;
     display: block;
     padding: 16px 17px;
@@ -225,7 +242,7 @@
   button.icon:focus, button.icon:hover {
     border: 0;
     outline: none;
-    background: #b3b3b3;
+    background: aliceblue;
   }
 }
 @media screen and (max-width: 600px) {
@@ -243,6 +260,7 @@
     position: absolute;
     right: 0;
     top: 0;
+    background: aliceblue;
   }
   .links{
     float: inherit;

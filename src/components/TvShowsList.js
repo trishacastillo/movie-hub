@@ -9,7 +9,7 @@ const TvShowsList = ({ tvshow }) => {
         <div className="tv-preview" key={tv.id}>
             <p><img src={ cover_path+tv.poster_path } alt="" /></p>
             <Link to={`/tvshow/${tv.id}`}>
-            <h2>{ tv.name }</h2>
+            <p>{ tv.name }</p>
             </Link>
         </div>
       ))}

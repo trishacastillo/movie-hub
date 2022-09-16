@@ -31,8 +31,11 @@ const Home = () => {
 
   return (
     <div className="home">
-      <SearchBox search={search} setSearch={setSearch}/>
-      <button onClick={searchClick}>Search</button>
+      <div className="searchBox">
+        <SearchBox search={search} setSearch={setSearch}/>
+        <button onClick={searchClick}>Search</button>
+      </div>
+      
       { error && <div>{ error }</div> }
       { isPending && 
         <div className="loaders">
