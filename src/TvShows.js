@@ -10,7 +10,7 @@ const TvShows = () => {
     <div className="tv-shows">
       { error && <div>{ error }</div> }
       { isPending && <div>Loading...</div> }
-      { tvshow && <div><h2>Trending tvshow</h2> <TvShowsList tvshow={tvshow}/></div> }
+      { tvshow && <div><h2>Trending Today</h2> <TvShowsList tvshow={tvshow}/></div> }
     </div>
     
   );

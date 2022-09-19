@@ -4,7 +4,6 @@ import '../App.css';
 import MovieList from "./MovieList";
 
 const MovieListGenre = () => {
-  const cover_path='https://image.tmdb.org/t/p/w500';
 
   const { id } = useParams();
   const API_KEY='ae7f7ed289b6d77c7761b724b99082dc';

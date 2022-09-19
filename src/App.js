@@ -7,7 +7,9 @@ import Categories from './components/Categories';
 import About from './components/About';
 import TvShows from './TvShows';
 import MovieListGenre from './components/MovieListGenre';
+import TvShowDetails from './components/TvShowDetails';
 import Footer from './Footer';
+import LatestShows from './components/TvShowModule/LatestShows';
 
 function App() {
   return (
@@ -33,6 +35,10 @@ function App() {
             </Route>
             <Route path="/tvshows">
               <TvShows/>
+              <LatestShows/>
+            </Route>
+            <Route path="/tvshow/:id">
+              <TvShowDetails/>
             </Route>
             <Route path="/about">
               <About/>

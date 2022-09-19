@@ -7,9 +7,9 @@ const Navbar = () => {
   };
   return (
     <nav className="topnav" id="topnav">
-      <a href="#" className="logo">
+      <div className="logo">
       <h1>MovieCyclopedia</h1>
-      </a>
+      </div>
       <div className="links">
         <Link to="/">Home</Link>
         <Link to="/genres">Movies</Link>

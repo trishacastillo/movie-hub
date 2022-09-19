@@ -137,6 +137,8 @@
 .genre-container{
   display: flex;
   flex-wrap: wrap;
+  height: 70vh;
+  margin-top: 1em;
 }
 .genre-preview{
   width: 20%;
@@ -267,7 +269,7 @@
     float: inherit;
   }
 }
-.home, .tv-shows, .about, .not-found{
+.home, .tv-shows, .about, .not-found, .movie_data-details{
   margin-top: 47px;
 }
 footer{
