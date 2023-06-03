@@ -6,6 +6,7 @@ const slideStyles = {
   borderRadius: "10px",
   backgroundSize: "cover",
   backgroundPosition: "center",
+  
 };
 
 const rightArrowStyles = {
@@ -80,7 +81,23 @@ const ImageSlider = ({ slides }) => {
         </div>
       </div>
       <div style={slideStylesWidthBackground}>
-      {/* <p>{slides[currentIndex].title}</p> */}
+           <div className="row align-items-center justify-content-center">
+            <div className="col-4 text-end">
+              <img class="slide_poster" src={cover_path+slides.results[currentIndex].poster_path } alt="" />
+            </div>
+            <div className="col-8">
+              <div className="mb-2">
+                <span class="h2 text-decoration-underline ts text-bold">{slides.results[currentIndex].title}</span> 
+              </div>
+              <div>
+                <span className="h4 ts">Date Released : {slides.results[currentIndex].release_date}</span>
+              </div>
+              <div>
+                <span className="h3 ts"> <b>{slides.results[currentIndex].vote_average.toFixed(1)}</b>  Overall Ratings</span>
+              </div>
+            </div>
+           </div>
+
       </div>
       <div style={dotsContainerStyles}>
         {slides.results.map((slide, slideIndex) => (
