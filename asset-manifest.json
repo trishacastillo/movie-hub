@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/trishacastillo/movie-hub/static/css/main.c8af4fe5.css",
-    "main.js": "/trishacastillo/movie-hub/static/js/main.db700999.js",
-    "index.html": "/trishacastillo/movie-hub/index.html",
-    "main.c8af4fe5.css.map": "/trishacastillo/movie-hub/static/css/main.c8af4fe5.css.map",
-    "main.db700999.js.map": "/trishacastillo/movie-hub/static/js/main.db700999.js.map"
+    "main.css": "/movie-hub/static/css/main.fd44d772.css",
+    "main.js": "/movie-hub/static/js/main.75b08a17.js",
+    "index.html": "/movie-hub/index.html",
+    "main.fd44d772.css.map": "/movie-hub/static/css/main.fd44d772.css.map",
+    "main.75b08a17.js.map": "/movie-hub/static/js/main.75b08a17.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8af4fe5.css",
-    "static/js/main.db700999.js"
+    "static/css/main.fd44d772.css",
+    "static/js/main.75b08a17.js"
   ]
 }
